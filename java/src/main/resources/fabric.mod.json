@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "werewolf",
+	"version": "${version}",
+	"name": "Werewolves",
+	"description": "Ordinary wolves by day, four block tall werewolves by night. Only silver can stop them.",
+	"authors": ["ulfendk"],
+	"contact": {
+		"homepage": "https://ulfendk.github.io/minecraft-werewolfs/",
+		"sources": "https://github.com/ulfendk/minecraft-werewolfs",
+		"issues": "https://github.com/ulfendk/minecraft-werewolfs/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/werewolf/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["dk.ulfen.werewolf.Werewolves"],
+		"client": ["dk.ulfen.werewolf.client.WerewolvesClient"]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*",
+		"geckolib": ">=5.5"
+	}
+}
