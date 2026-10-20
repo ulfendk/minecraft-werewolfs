@@ -186,6 +186,12 @@ ${t.javaSteps(
     '<a href="https://modrinth.com/mod/geckolib">GeckoLib</a>',
   ).map((step) => `      <li>${step}</li>`).join('\n')}
     </ol>
+    <h3 class="edition">${esc(t.upgradeTitle)}</h3>
+    <ol class="steps">
+${t.upgradeSteps.map((step) => `      <li>${step}</li>`).join('\n')}
+    </ol>
+    <p class="note">${t.upgradeServer}</p>
+    <p>${t.upgradeJava}</p>
   </section>
 
   <section id="forms">
