@@ -43,6 +43,7 @@ export const LANGUAGES = {
 };
 
 const en = {
+  allMods: 'All our mods',
   title: 'Werewolves – Minecraft add-on and mod',
   description: 'Werewolves for Minecraft Bedrock and Java Edition: ordinary wolves by day, four block tall werewolves by night. Free download.',
   tagline: 'By day it is just a grey wolf in the forest. When the sun goes down it rises on two legs, four blocks tall, and goes hunting. Only silver can stop it.',
@@ -95,6 +96,7 @@ const en = {
 };
 
 const da = {
+  allMods: 'Alle vores mods',
   title: 'Varulve – tilføjelse og mod til Minecraft',
   description: 'Varulve til Minecraft Bedrock og Java Edition: almindelige ulve om dagen, fire blokke høje varulve om natten. Gratis download.',
   tagline: 'Om dagen er det bare en grå ulv i skoven. Når solen går ned, rejser den sig på to ben, fire blokke høj, og går på jagt. Kun sølv kan stoppe den.',
