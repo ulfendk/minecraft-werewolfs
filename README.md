@@ -58,5 +58,9 @@ One entity has two forms. On Bedrock the forms are component groups swapped by a
 ### Releases
 Bump `version` in `package.json`, add a section to `CHANGELOG.md`, then push a tag such as `v0.1.0`. The release workflow builds and tests both editions, publishes a GitHub Release with the files, and updates the website.
 
+## Support
+
+If you enjoy our mods, you can support us on [GitHub Sponsors](https://github.com/sponsors/ulfendk) or [Buy Me a Coffee](https://buymeacoffee.com/ulfendk).
+
 ## License
 MIT. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.

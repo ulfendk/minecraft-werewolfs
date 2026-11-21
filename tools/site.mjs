@@ -152,11 +152,17 @@ footer { margin-top: 56px; padding: 28px 0 40px; border-top: 1px solid var(--lin
   .hero img.icon { width: 112px; height: 112px; }
   .actions { justify-content: center; }
 }
+.reload { display: inline-grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: inherit; box-shadow: inset 0 0 0 1.5px currentColor; cursor: pointer; vertical-align: middle; }
+.reload:hover, .reload:focus-visible { background: rgb(255 255 255 / .12); }
+.reload svg { width: 16px; height: 16px; }
+.langs span, .langs { align-items: center; }
+.langs span { display: inline-flex; gap: 8px; }
+.langs { gap: 8px; }
 </style>
 </head>
 <body>
 <header class="hero">
-  <nav class="langs wrap"><a class="home" href="${home}">← ${esc(t.allMods)}</a><span>${switcher}</span></nav>
+  <nav class="langs wrap"><a class="home" href="${home}">← ${esc(t.allMods)}</a><span>${switcher}<button class="reload" type="button" aria-label="${lang === 'da' ? 'Genindlæs' : 'Reload'}" title="${lang === 'da' ? 'Genindlæs' : 'Reload'}" onclick="location.replace(location.pathname + '?r=' + Date.now() + location.hash)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg></button></span></nav>
   <div class="wrap">
     <img class="icon" src="${up}img/icon.png" alt="" width="160" height="160">
     <div>
@@ -220,6 +226,7 @@ ${t.features.map(([title, text]) => `      <div class="feature"><h3>${esc(title)
   <div class="wrap">
     <p>${t.footerSource(link(`https://github.com/${repo}`), link(`https://github.com/${repo}/issues`))}</p>
     <p>${esc(t.footerLegal)}</p>
+    <p>${lang === 'da' ? 'Kan du lide vores mods? Støt os på' : 'Enjoy our mods? Support us on'} ${link('https://github.com/sponsors/ulfendk')('GitHub Sponsors')} · ${link('https://buymeacoffee.com/ulfendk')('Buy Me a Coffee')}</p>
     <p>${link(home)(`← ${t.allMods}`)}</p>
   </div>
 </footer>
